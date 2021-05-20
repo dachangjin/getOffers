@@ -7,7 +7,7 @@
 
 import Foundation
 
-// 机器人的运动范围，回溯
+// 机器人的运动范围。深度优先搜索
 // https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/
 class Solution {
     func movingCount(_ m: Int, _ n: Int, _ k: Int) -> Int {
