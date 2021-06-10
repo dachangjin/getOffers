@@ -52,7 +52,7 @@ public:
         int start = 0;
         int end = (int)arr.size() - 1;
         int index = partition(arr, start, end);
-        // 减小范围
+        // 逐渐减小范围
         while (index != k) {
             if (index < k) {
                 start = index + 1;
