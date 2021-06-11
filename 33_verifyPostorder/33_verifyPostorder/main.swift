@@ -6,7 +6,12 @@
 //
 
 import Foundation
-
+/*
+ https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/
+ 剑指 Offer 33. 二叉搜索树的后序遍历序列
+ 后续遍历特点是最后一个元素是子树的根节点，根节点都是小于做变节点而大于右边节点的。
+ 找到子树的根节点，遍历数组，找出左子树和右子树的分解。再遍历右子树对应的数组范围，如果有小于根节点元素的则失败。
+ */
 class Solution {
     func verifyPostorder(_ postorder: [Int]) -> Bool {
         if postorder.count == 0 {

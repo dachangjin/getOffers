@@ -18,7 +18,11 @@ public class TreeNode {
         self.right = nil
     }
 }
- 
+ /*
+ https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/
+ 剑指 Offer 32 - II. 从上到下打印二叉树 II
+ 层序遍历，当一层遍历完后重置数组和count
+ */
 class Solution {
     func levelOrder(_ root: TreeNode?) -> [[Int]] {
         if root == nil {
